@@ -88,5 +88,33 @@ else:
   
 print("You got", a1+a2+a3+a4, "out of 100")
 
+#day14
 
+from getpass import getpass as input
+
+print("You should use 'r' for rock, 'p' for paper, and 's' for scissors. After your move, please press enter.")
+player_1 = input("Player 1, what is your move? ")
+
+player_2 = input("Player 2, what is your move? ")
+
+if player_1=="p" and player_2=="s":
+    print("player 2 wins")
+
+if player_1=="p" and player_2=="r":
+  print("player 1 wins")
+
+if player_1=="s" and player_2=="r":
+  print("player 2 wins")
+
+if player_1=="s" and player_2=="p":
+  print("player 1 wins")
+
+if player_1=="r" and player_2=="s":
+  print("player 1 wins")
+
+if player_1=="r" and player_2=="p":
+  print("player 2 wins")
+
+if player_1==player_2:
+  print("draw")
 
