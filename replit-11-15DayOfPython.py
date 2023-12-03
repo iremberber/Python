@@ -118,3 +118,31 @@ if player_1=="r" and player_2=="p":
 if player_1==player_2:
   print("draw")
 
+#Day15
+#loops : Fix the problem
+
+"""counter = 0
+while counter < 10:
+  print(counter)"""
+
+counter = 0
+while counter < 10:
+  print(counter)
+  counter +=  1
+
+"""counter = 0
+while counter >= 12:
+  print(counter)
+  counter += 1"""
+
+counter = 0
+while counter <= 12:
+  print(counter)
+  counter += 1
+
+exit = ""
+while exit != "yes":
+  print("🥳")
+  exit = input("Exit?: ")
+
+
