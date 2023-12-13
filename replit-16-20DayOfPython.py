@@ -87,3 +87,10 @@ while True:
   else:
     print("That is not a number I recognize.")
 print("It took you", attempt, "attempt(s) to get the correct answer.")
+
+#day19
+loan = 1000
+apr = 0.05
+for i in range(10):
+  loan+=(loan*apr)
+  print("Year", i+1, "is", round(loan,2))
