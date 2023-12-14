@@ -94,3 +94,38 @@ apr = 0.05
 for i in range(10):
   loan+=(loan*apr)
   print("Year", i+1, "is", round(loan,2))
+
+#Day20
+for i in range(100,110):
+  print(i)
+
+print("Thirteen Times Table")
+for i in range(1, 13):
+  print(i, "x 13 =", i * 13)
+
+for i in range (0, 1000000, 25):
+  print(i)
+
+for i in range(10, -1, -1):
+  print(i)
+
+for i in range (10, 0, -1):
+  print(i)
+
+#fix the code
+
+#while i in range (20, 40, -1):
+  #print(i)
+
+for i in range (40, 20, -1):
+  print(i)
+
+#day 20 challenge
+
+start = input("Enter a starting number: ")
+ending = input("Enter an ending number: ")
+increment = input("Enter an increment: ")
+
+for i in range(int(start), int(ending) + 1, int(increment)):
+  print(i)
+
