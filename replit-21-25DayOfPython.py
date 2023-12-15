@@ -40,3 +40,57 @@ while True:
         break
     else:
         print("That is not a number I recognize.")
+
+#Day23
+
+def rollDice():
+  import random
+  dice = random.randint(1,6)
+  print("you rolled", dice)
+
+for i in range(100):
+  rollDice()
+
+#Common Errors
+
+"""
+def print My Name():
+  print("My Name is David")
+  
+print My Name()
+"""
+def printMyName():
+  print("My Name is Mary")
+  
+printMyName()
+
+"""
+def countToFive:
+  for i in range(1, 6):
+    print(i)
+    
+countToFive()
+"""
+
+def countToFive():
+  for i in range(1, 6):
+    print(i)
+  
+countToFive()
+
+#Challenge
+
+def login():
+    while True:
+      username = input("Enter username: ")
+      password = input("Enter password: ")
+      if username == "Mary" and password == "6161":
+        print("Welcome David")
+        break
+      else:
+        print("That is not the correct username or password. Try again!")
+        continue
+    
+print("REPLIT LOGIN SYSTEM")
+login()
+
