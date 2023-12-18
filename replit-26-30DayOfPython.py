@@ -42,3 +42,25 @@ while True:
     exit()
   else :
     continue
+
+  #day27 Project Day
+
+  name = input("What is your character name? ")
+type = input("What is your character type? ")
+
+import random, time, os
+os.system("clear")
+time.sleep(1)
+def roll_dice(dice1,dice2):
+  healt = (dice1*dice2/2)+10
+  return healt
+healt = roll_dice(random.randint(1,6),random.randint(1,12))
+
+print(name + "'s healt is " + str(healt)+ "ph")
+
+def roll_dice2(dice11,dice22):
+  strength = (dice11*dice22/2)+12
+  return strength
+strength = roll_dice2(random.randint(1,6),random.randint(1,12))
+
+print(name + "'s strength is " + str(strength)+ "ph")
