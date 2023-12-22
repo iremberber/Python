@@ -168,15 +168,29 @@ print(winner, "has won in", round, "rounds")
 
 #day29
 
+for i in range(0, 10):
+  print(i, end="ıma yaptım ")
+
+print("If you put ", "\033[33m", "nothing as the ", "\033[35m", "end character ", "\033[32m", "then you don't ", "\033[0m", "get odd gaps ", sep="")
+
+import os, time
+print('\033[?25l', end="")
+for i in range(1, 101):
+  print(i)
+  time.sleep(0.1)
+  os.system("clear")
+  print('\033[?25h', end="")
+
+#challange
+  
 def newPrint(color, word):
   if color=="red":
-    print("\033[31m", word, sep="", end="")
-  elif color=="green":
-    print("\033[32m", word, sep="", end="")
+    print("\033[0;31m", word, sep="", end="")
   elif color=="blue":
-    print("\033[34m", word, sep="", end="")
+    print("\033[0;34m", word, sep="", end="")
   else:
-    print("\033[0m", word, sep="", end="")
+    print(word, sep="", end="")
+
 print("Super Subroutine")
 print("With my ", end="")
 newPrint("red", "new program")
