@@ -42,3 +42,50 @@ text = "Username: "
 username = input(f"{colorChange('white')}{text:^35}")
 text = "Password: "
 username = input(f"{colorChange('white')}{text:^35}")
+
+#day32
+
+timetable = ["Computer Science", "Math", "English", "Art", "Sport"]
+print(timetable[1])
+
+print()
+
+timetable = ["Computer Science", "Math", "English", "Art", "Sport"]
+print(timetable[0])
+print(timetable[1])
+print(timetable[2])
+print(timetable[3])
+print(timetable[4])
+
+print()
+
+for lesson in timetable:
+  print(lesson)
+  
+#commonErrors
+
+"""
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Violet"]
+print(f"The first color is {colors[6]}")
+"""
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Violet"]
+print(f"The last color is {colors[5]}")
+
+#fixMyCode
+
+"""
+grocery list = ["bananas", "bread", "milk", "eggs", "juice", "cheese"]
+print("The first grocery item to buy is {grocery list[1]}.")
+"""
+
+groceryList = ["bananas", "bread", "milk", "eggs", "juice", "cheese"]
+print(f"The first grocery item to buy is {groceryList[0]}.")
+
+#Challange
+
+import random
+
+languages = ["merhaba", "hello", "ciao", "salut", "hallo", "hola", "bonjour"]
+
+print(f"{random.choice(languages)}")
+
