@@ -250,3 +250,38 @@ while True:
 
   time.sleep(1)
   os.system("clear")
+
+#day35 project day
+
+ToDoList = ["Record the video for day 36"]
+
+while True:
+    edit = input("Do you want to view, add, or edit your to-do list? (Type 'exit' to end) ")
+
+    if edit.lower() == "exit":
+        print("Exiting the to-do list editor.")
+        break
+
+    def edit_item(action):
+        if action == "view":
+            print(ToDoList)
+        elif action == "add":
+            add_item = input("What do you want to add? ")
+            ask = input("Are you sure you want to add " + add_item + "? ")
+            if ask.lower() == "yes":
+                ToDoList.append(add_item)
+                print(ToDoList)
+            else:
+                print("Item not added.")
+        elif action == "edit":
+            remove_item = input("What do you want to remove? ")
+            askr = input("Are you sure you want to remove " + remove_item + "? ")
+            if askr.lower() == "yes":
+                ToDoList.remove(remove_item)
+                print(ToDoList)
+            else:
+                print("Item not removed.")
+        else:
+            print("Unfortunately, that is not an option.")
+
+    edit_item(edit)
