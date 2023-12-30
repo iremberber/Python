@@ -83,3 +83,5 @@ maiden = all[2].strip()
 city = all[3].strip()
 name = f"{first[:3].title()}{last[:3].lower()} {maiden[:2].title()}{city[-3:].lower()}"
 print(f"Your Star Wars name is {name}")
+
+#day 38
